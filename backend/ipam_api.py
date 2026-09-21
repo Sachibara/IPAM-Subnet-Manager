@@ -166,7 +166,7 @@ def seed(conn: sqlite3.Connection) -> None:
     address_rows = [
         ("HQ Users","10.20.10.1","Static","HQ-GW-V10","00:1B:54:AA:10:01","Network Infrastructure","Default gateway"),
         ("HQ Users","10.20.10.25","Reserved","FIN-PRN-01","3C:52:82:10:A2:11","Finance","Printer reservation"),
-        ("HQ Users","10.20.10.44","DHCP","HR-LT-008","84:7B:EB:9A:11:03","Nina Cruz","DHCP lease record"),
+        ("HQ Users","10.20.10.44","DHCP","HR-LT-008","84:7B:EB:9A:11:03","Nico Cruz","DHCP lease record"),
         ("HQ Servers","10.20.30.10","Static","SRV-DNS01","00:50:56:AA:30:10","IT","Primary DNS"),
         ("HQ Servers","10.20.30.11","Static","SRV-DNS02","00:50:56:AA:30:11","IT","Secondary DNS"),
         ("HQ Infrastructure Mgmt","10.20.50.2","Static","CORE-SW-01","00:1C:73:50:00:02","Network Infrastructure","Core switch management"),
