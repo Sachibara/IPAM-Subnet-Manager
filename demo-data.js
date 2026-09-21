@@ -47,5 +47,5 @@ window.IPAM_DEMO = (() => {
     {id:6,at:ago(12),actor:"IPAM Studio",action:"Address reserved",detail:"10.20.10.25 reserved for FIN-PRN-01.",subnet_id:1}
   ];
 
-  return {generated_at:new Date(now).toISOString(),root_network:"10.20.0.0/16",subnets,addresses,vlans,audit};
+  return {generated_at:new Date(now).toISOString(),root_network:"10.0.0.0/8",subnets,addresses,vlans,audit};
 })();
