@@ -4,7 +4,7 @@ A portfolio-grade IP Address Management and subnet-planning platform for Network
 
 ## Architecture
 
-- **Portfolio Demo Mode** — public static deployment with realistic sites, VLANs, subnets, address utilization, reservations, and audit activity.
+- **Browser Workspace Mode** — public browser application with realistic sites, VLANs, subnets, address utilization, reservations, and audit activity.
 - **Live Backend Mode** — local FastAPI + SQLite backend with persistent subnet, VLAN, address, and audit records.
 
 ## Core Features
