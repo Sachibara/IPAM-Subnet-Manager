@@ -99,13 +99,13 @@
   }
 
   function cloneDemo(){
-    const saved=sessionStorage.getItem("ipam_demo_state");
+    const saved=localStorage.getItem("ipam_demo_state");
     if(saved){try{return JSON.parse(saved)}catch{}}
     return JSON.parse(JSON.stringify(window.IPAM_DEMO));
   }
 
   function persistDemo(){
-    if(state.mode==="demo") sessionStorage.setItem("ipam_demo_state", JSON.stringify(state.data));
+    if(state.mode==="demo") localStorage.setItem("ipam_demo_state", JSON.stringify(state.data));
   }
 
   async function fetchJson(path,options={}){
@@ -131,9 +131,9 @@
   async function loadData(showToast=false){
     if(state.mode==="demo"){
       state.data=cloneDemo(); state.lastRefresh=new Date();
-      setMode("","Demo plan","Representative IPAM data");
+      setMode("","Browser workspace","Saved locally in this browser");
       renderAll();
-      if(showToast) toast("IPAM refreshed","Demo address plan reloaded.");
+      if(showToast) toast("IPAM refreshed","Browser-saved address plan loaded.");
       return;
     }
     setMode("","Connecting…",state.backendUrl);
@@ -330,7 +330,7 @@
       state.data.subnets.push({id,name:"Planned subnet",cidr:child.cidr,site:"Planned",department:"",vlan_id:null,gateway:"",dns1:"",dns2:"",used:0,total_hosts:child.usable,updated_at:new Date().toISOString()});
       addAudit("Jim Camus","Subnet created",child.cidr+" created from planner.",id);
     }
-    persistDemo();renderAll();toast("Subnets created",selected.length+" demo subnet(s) added.");openPage("subnets");
+    persistDemo();renderAll();toast("Subnets created",selected.length+" subnet(s) saved in this browser.");openPage("subnets");
   }
 
   function addAudit(actor,action,detail,subnetId=null){
