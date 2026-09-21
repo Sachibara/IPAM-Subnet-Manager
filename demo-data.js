@@ -27,7 +27,7 @@ window.IPAM_DEMO = (() => {
   const addresses = [
     {id:1,subnet_id:1,subnet:"HQ Users",site:"HQ",ip:"10.20.10.1",state:"Static",hostname:"HQ-GW-V10",mac:"00:1B:54:AA:10:01",owner:"Network Infrastructure",notes:"Default gateway",updated_at:ago(12)},
     {id:2,subnet_id:1,subnet:"HQ Users",site:"HQ",ip:"10.20.10.25",state:"Reserved",hostname:"FIN-PRN-01",mac:"3C:52:82:10:A2:11",owner:"Finance",notes:"Printer reservation",updated_at:ago(9)},
-    {id:3,subnet_id:1,subnet:"HQ Users",site:"HQ",ip:"10.20.10.44",state:"DHCP",hostname:"HR-LT-008",mac:"84:7B:EB:9A:11:03",owner:"Nina Cruz",notes:"DHCP lease record",updated_at:ago(.4)},
+    {id:3,subnet_id:1,subnet:"HQ Users",site:"HQ",ip:"10.20.10.44",state:"DHCP",hostname:"HR-LT-008",mac:"84:7B:EB:9A:11:03",owner:"Nico Cruz",notes:"DHCP lease record",updated_at:ago(.4)},
     {id:4,subnet_id:3,subnet:"HQ Servers",site:"HQ",ip:"10.20.30.10",state:"Static",hostname:"SRV-DNS01",mac:"00:50:56:AA:30:10",owner:"IT",notes:"Primary DNS",updated_at:ago(18)},
     {id:5,subnet_id:3,subnet:"HQ Servers",site:"HQ",ip:"10.20.30.11",state:"Static",hostname:"SRV-DNS02",mac:"00:50:56:AA:30:11",owner:"IT",notes:"Secondary DNS",updated_at:ago(18)},
     {id:6,subnet_id:5,subnet:"HQ Infrastructure Mgmt",site:"HQ",ip:"10.20.50.2",state:"Static",hostname:"CORE-SW-01",mac:"00:1C:73:50:00:02",owner:"Network Infrastructure",notes:"Core switch management",updated_at:ago(.2)},
