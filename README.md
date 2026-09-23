@@ -2,6 +2,11 @@
 
 A portfolio-grade IP Address Management and subnet-planning platform for Network Engineering, NOC, IT Infrastructure, and Network Operations roles.
 
+
+## Public App
+
+**Live app:** https://sachibara.github.io/IPAM-Subnet-Manager/
+
 ## Architecture
 
 - **Browser Workspace Mode** — public browser application with realistic sites, VLANs, subnets, address utilization, reservations, and audit activity.
